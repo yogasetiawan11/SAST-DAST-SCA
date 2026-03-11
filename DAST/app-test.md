@@ -13,12 +13,24 @@ access the app
 localhost:3000
 ```
 
-scan target by running zap in CLI 
+## Download and Scan application target by running zap trough CLI 
 ```sh
-docker run --rm \                                                                                      ✔  8509  15:33:58
+docker run --rm \
   -v "$(pwd):/zap/wrk" \
   -t ghcr.io/zaproxy/zaproxy:stable \
   zap-baseline.py \
   -t http://host.docker.internal:3000 \
   -r zap-report.html
 ```
+
+It will scan thoroughly the application in a run time and send the output to the ``zap-report.html``
+
+Scan the app trough UI with docker
+
+```sh
+docker run -it \
+  -p 8080:8080 \
+  ghcr.io/zaproxy/zaproxy:stable \
+  zap-webswing.sh
+```
+
