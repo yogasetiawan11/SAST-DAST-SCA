@@ -17,11 +17,3 @@ SCA tools focus on managing the security of software components or dependencies 
 - **Audit Library for Other Languages**: Many programming languages have dedicated libraries tailored for auditing dependencies, enhancing the security posture of the application.
 
 Incorporating SAST, DAST, and SCA into the development process ensures comprehensive security coverage, allowing organizations to produce secure software efficiently and effectively.
-
-
-| Issue | SAST | SCA | DAST |
-| Hardcoded Secret | ✅ | ❌ | ❌ |
-| Vulnerable Library | ❌ | ✅ | ❌ |
-| SQL Injection | ✅ | ❌ | ✅ |
-| Command Injection | ✅ | ❌ | ✅ |
-Gimana, perlu penjelasan lebih lanjut? 😊
